@@ -6,6 +6,7 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 html {
@@ -55,8 +56,12 @@ video {
 svg {
   display: inline-block;
   max-width: 100%;
+  width: 1.5em;
+  height: 1.5em;
+/*  Propriétés de base
   width: 100%;
-  height: auto;
+  height: auto; 
+*/
 }
 
 /* Preventing Text Overflow */
@@ -65,3 +70,51 @@ h1, h2, h3, h4, h5, p {
   word-wrap: break-word;
   word-break: break-word;
 }
+
+a {
+  text-decoration: none;
+  color: #131418;
+}
+
+nav .nav-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151a2d;
+  color: #ebe9ec;
+}
+nav .nav-top ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0.3em;
+  margin: 0.3em;
+}
+
+nav .nav-top svg {
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+
+
+nav .nav-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dedede;
+}
+nav .nav-bottom p {
+  padding: 0.8em;
+}
+nav .nav-bottom ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8em;
+  margin: 0.1em;
+}
+nav .nav-bottom ul li {
+  margin-left: 1em;
+}
+
+
