@@ -76,6 +76,13 @@ a {
   color: #131418;
 }
 
+/* Ne fonctionne pas... */
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+
+}
+
 nav .nav-top {
   display: flex;
   flex-direction: row;
@@ -117,4 +124,7 @@ nav .nav-bottom ul li {
   margin-left: 1em;
 }
 
+header img {
+  display: none;
+}
 
