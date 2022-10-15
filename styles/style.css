@@ -1,3 +1,39 @@
+/* FONTS */
+
+@import url(https://fonts.bunny.net/css?family=akshar:300,400,500,600,700);
+
+@font-face {
+  font-family: "Nunito-Sans-300";
+  src: url("/assets/fonts/Nunito-Sans-300.eot") format("eot"),
+       url("/assets/fonts/Nunito-Sans-300.svg") format("svg"),
+       url("/assets/fonts/Nunito-Sans-300.ttf") format("ttf"),
+       url("/assets/fonts/Nunito-Sans-300.woff") format("woff"),
+       url("/assets/fonts/Nunito-Sans-300.woff2") format("woff2");
+ }
+ @font-face {
+  font-family: "Nunito-Sans-700";
+  src: url("/assets/fonts/Nunito-Sans-700.eot") format("eot"),
+       url("/assets/fonts/Nunito-Sans-700.svg") format("svg"),
+       url("/assets/fonts/Nunito-Sans-700.ttf") format("ttf"),
+       url("/assets/fonts/Nunito-Sans-700.woff") format("woff"),
+       url("/assets/fonts/Nunito-Sans-700.woff2") format("woff2");
+ }
+ @font-face {
+  font-family: "Nunito-Sans-900";
+  src: url("/assets/fonts/Nunito-Sans-900.eot") format("eot"),
+       url("/assets/fonts/Nunito-Sans-900.svg") format("svg"),
+       url("/assets/fonts/Nunito-Sans-900.ttf") format("ttf"),
+       url("/assets/fonts/Nunito-Sans-900.woff") format("woff"),
+       url("/assets/fonts/Nunito-Sans-900.woff2") format("woff2");
+ }
+ @font-face {
+  font-family: "Nunito-Sans-Regular";
+  src: url("/assets/fonts/Nunito-Sans-Regular.eot") format("eot"),
+       url("/assets/fonts/Nunito-Sans-Regular.svg") format("svg"),
+       url("/assets/fonts/Nunito-Sans-Regular.ttf") format("ttf"),
+       url("/assets/fonts/Nunito-Sans-Regular.woff") format("woff"),
+       url("/assets/fonts/Nunito-Sans-Regular.woff2") format("woff2");
+ }
 
 /* petit reset minimal de base */
 *,
@@ -38,6 +74,7 @@ body {
   -webkit-overflow-scrolling: touch;
   color: #131418;
   background-color: #efefef;
+  font-family: "Nunito-Sans-Regular", sans-serif;
 }
 
 img,
@@ -76,7 +113,21 @@ a {
   color: #131418;
 }
 
-/* Ne fonctionne pas... */
+header {
+  width: 70%;
+  margin: 0 15%;
+  height: 30em;
+}
+
+section {
+  width: 70%;
+  margin: 6em 15%;
+  height: auto;
+
+}
+
+
+/* NAV (Sticky ne fonctionne pas...) */
 nav {
   position: sticky;
   position: -webkit-sticky;
@@ -90,6 +141,7 @@ nav .nav-top {
   align-items: center;
   background-color: #151a2d;
   color: #ebe9ec;
+  font-family: "Nunito-Sans-700", sans-serif;
 }
 nav .nav-top ul {
   display: flex;
@@ -113,6 +165,7 @@ nav .nav-bottom {
 }
 nav .nav-bottom p {
   padding: 0.8em;
+  font-family: "Nunito-Sans-900", sans-serif;
 }
 nav .nav-bottom ul {
   display: flex;
@@ -124,7 +177,71 @@ nav .nav-bottom ul li {
   margin-left: 1em;
 }
 
-header img {
-  display: none;
+.svg-white {
+  fill: #efefef;
 }
+
+/* HEADER */
+
+.container-header {
+  background-color: #dedede;
+}
+
+#header-flex-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 5em;
+} 
+#header-flex-top .element:nth-of-type(1) {
+  font-size: 1.2em;
+  flex-basis: 30%;
+}
+#header-flex-top .element:nth-of-type(2) {
+  flex-basis: 30%;
+}
+
+#header-flex-center {
+  padding-top: 3em;
+  font-family: "Nunito-Sans-700", sans-serif;
+} 
+
+#header-flex-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Akshar", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  padding-bottom: 5em;
+}
+#header-flex-bottom svg {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 0.5em;
+}
+#header-flex-bottom .element:nth-of-type(1) {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 30%;
+}
+#header-flex-bottom .element:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+/* SECTION 1 - OFFRE */
+
+#offre {
+  display: flex;
+  flex-direction: row;
+}
+
+#offre-flex-right h1, #offre-flex-right p {
+  margin-bottom: 1em;
+}
+
 
