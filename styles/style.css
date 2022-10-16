@@ -108,6 +108,15 @@ h1, h2, h3, h4, h5, p {
   word-break: break-word;
 }
 
+h1 {
+  font-family: "Akshar", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+p {
+  margin-bottom: 2em;
+}
+
 a {
   text-decoration: none;
   color: #131418;
@@ -123,16 +132,15 @@ section {
   width: 70%;
   margin: 6em 15%;
   height: auto;
-
 }
 
 
 /* NAV (Sticky ne fonctionne pas...) */
-nav {
+/* nav {
   position: sticky;
   position: -webkit-sticky;
-
-}
+  top: 15px;
+} */
 
 nav .nav-top {
   display: flex;
@@ -227,11 +235,21 @@ nav .nav-bottom ul li {
 }
 #header-flex-bottom .element:nth-of-type(2) {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   flex-basis: 30%;
 }
+
+#header-img {
+  width: 25em;
+  position: absolute;
+  left: 28%;
+  top: 17%
+}
+
+/* SECTIONS */
 
 /* SECTION 1 - OFFRE */
 
@@ -240,12 +258,90 @@ nav .nav-bottom ul li {
   flex-direction: row;
 }
 
+#offre-flex-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  font-family: "Akshar", sans-serif;
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+#offre-flex-left .element {
+  background-color: #151a2d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+}
+#offre-flex-left .element svg {
+  margin-right: 0.5rem;
+}
+#offre-flex-left .element:nth-of-type(1) {
+  color: #e9153c;
+}
+#offre-flex-left .element:nth-of-type(2) {
+  color: #f38009;
+}
+#offre-flex-left .element:nth-of-type(3) {
+  color: #0c90fd;
+}
+
+
+#offre-flex-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
 #offre-flex-right h1, #offre-flex-right p {
   margin-bottom: 1em;
 }
 
-#offre-flex-right h1 {
-  font-family: "Akshar", sans-serif;
-  font-weight: 500;
+/* SECTION 2 - BIO */
+#offre {
+  display: flex;
+  flex-direction: row;
 }
 
+#bio-flex {
+  display: flex;
+  width: 100%;
+}
+#bio-flex-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  margin-right: 2em;
+}
+
+#bio-flex-right {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-content: center;
+  flex-basis: 40%;
+}
+
+/* SECTION 3 - COMPETENCES */
+#competences-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#competences-head h1 {
+  display: flex;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+#competences-head h1::before, h1::after {
+    content: "";
+    border-bottom: 2px solid #151a2d;
+    margin: auto;
+    width: 9em;
+}
+
+#competences-head h2 {
+  font-size: 1.2em;
+  font-family: "Nunito-Sans-300", sans-serif;
+  font-weight: 300;
+}
